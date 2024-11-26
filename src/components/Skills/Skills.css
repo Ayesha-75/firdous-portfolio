@@ -1,0 +1,105 @@
+.skill-box-container{
+    border: solid 3px;
+    width: 500px; /* Box width */
+  height: auto; /* Box height */
+  /* display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column; */
+  /* justify-content: center; */
+    border-radius: 20px;
+    /* border-color: #022534; */
+    border-color: #ADBACC;
+    color: white;
+    padding-bottom: 4px;
+    
+}
+.heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 450;
+    
+}
+.item-db {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.logo{
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+}
+.span-js{
+    padding-left: 4px;
+}
+.skill-heading{
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: 780;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .skill-heading{
+        padding-top: 90px;
+        font-size: 45px;
+        font-weight: 780;
+        color: #fff;
+    }
+}
+
+.span-name{
+    margin-bottom: 5px;
+}
+
+
+.skill-btn{
+    height: 50px;
+    width: 120px;
+
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 8px;
+
+    color: white;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* @media (min-width: 600px) {
+    .container{
+        width: 500px;
+
+    }
+} */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  gap: 20px; /* Space between boxes */
+  width: 100%;
+}
+
+/* @keyframes appear {
+    from {
+        opacity: 0;
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.skill-box-container{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+} */

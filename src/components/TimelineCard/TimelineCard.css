@@ -1,0 +1,42 @@
+.title-heading{
+    color: #964734;
+    font-size: 23px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.institution{
+    color: #0FA4AF;
+    margin: 0;
+    font-size: 17px;
+    
+}
+
+.location{
+    color: rgb(57, 55, 55);
+    font-weight: 480;
+    margin: 0;
+}
+
+.list-items{
+    color: rgb(57, 55, 55);
+    font-weight: 450;
+    /* margin: 0; */
+}
+
+.grade{
+    color: black;
+    /* margin-top: 0; */
+    margin-bottom: 0;
+}
+
+.education-container{
+    min-height: auto;
+  max-height: none;
+  height: auto;
+  padding: 10px; /* Adjust padding as needed */
+  overflow: visible;
+  width: 100%;        /* Makes it take up full width of the parent */
+  max-width: none;    /* Remove any max-width limit */
+  min-width: 0;
+}

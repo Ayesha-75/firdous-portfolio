@@ -1,0 +1,11 @@
+.ed-heading {
+    font-size: 30px;
+    font-weight: 780;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .ed-heading{
+        font-size: 45px;
+    }
+}
