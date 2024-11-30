@@ -19,7 +19,7 @@ const TimelineCard = (props) => {
         }}/>
       }
       >
-        
+        <div className='e-cont'>
         <h1 className='title-heading'>{title}</h1>
         <h3 className='institution'>{institution}</h3>
         <h5 className='location'>{location}</h5>
@@ -29,7 +29,7 @@ const TimelineCard = (props) => {
             ))}
         </ul>
         <h5 className='grade'>Grade: {grade}</h5>
-        
+        </div>
         </VerticalTimelineElement>  
     </>
   )

@@ -1,5 +1,5 @@
 .title-heading{
-    color: #964734;
+    color: #fff;
     font-size: 23px;
     margin-top: 0;
     margin-bottom: 0;
@@ -13,21 +13,29 @@
 }
 
 .location{
-    color: rgb(57, 55, 55);
+    color: rgb(172, 168, 168);
     font-weight: 480;
     margin: 0;
 }
 
 .list-items{
-    color: rgb(57, 55, 55);
+    /* color: rgb(57, 55, 55); */
     font-weight: 450;
+    color: gray;
     /* margin: 0; */
 }
 
 .grade{
-    color: black;
+    color: #fff;
     /* margin-top: 0; */
     margin-bottom: 0;
+}
+
+.e-cont{
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
 }
 
 .education-container{
@@ -39,4 +47,5 @@
   width: 100%;        /* Makes it take up full width of the parent */
   max-width: none;    /* Remove any max-width limit */
   min-width: 0;
+  /* background-color: #000; */
 }

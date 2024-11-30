@@ -1,5 +1,8 @@
 import React from 'react'
 import Swal from 'sweetalert2'
+import { FaLocationDot } from "react-icons/fa6";
+import { IoCall } from "react-icons/io5";
+import { IoMdMail } from "react-icons/io";
 import './Contact.css'
 
 const Contact = () => {
@@ -33,32 +36,47 @@ const Contact = () => {
 
   return (
     <>
-    <h1 className='contact-heading'>Contact Form</h1>
-    <form className='form-container' onSubmit={onSubmit}>
-      <div>
-      <label>Full Name</label>
-      <br/>
-      <input className='input' type='text' 
-      placeholder='Enter your name'
-      name='fullName' required/>
+    <div className='contact-container'>
+      <div className='get-in-touch'>
+        <h1 className='contact-heading'>GET IN TOUCH</h1>
+        <div>
+          <div className='contact-info-alignment'>
+          <FaLocationDot size={25} className='contact-icon' />
+          <p className='contact-location'>Khammam | Telangana</p>
+          </div>
+          <div className='contact-info-alignment'>
+            <a href="tel:+91 9966736187"><IoCall size={25} className='contact-icon' /></a>
+          <p title='Give me a call' className='contact-location contact-anchor'>9966736187</p>
+
+          </div>
+          <div className='contact-info-alignment'>
+            <a href='mailto: firdousayeshashaik123@gmail.com' target='_blank'><IoMdMail size={25} className='contact-icon' /></a>
+            <p title='Send me an email' className='contact-location contact-anchor'>firdousayeshashaik123@gmail.com</p>
+          </div>
+        </div>
       </div>
-      <div >
-      <label>Email</label>
-      <br/>
-      <input className='input' type='email' 
-      placeholder='Enter your email' 
-      name='email' required/>
-      </div>
-      
-      <div>
-      <label>Message</label>
-      <br/>
-      <textarea className='text-area' cols="63" 
-      placeholder='Enter your message'
-      name='message' required></textarea>
-      </div>
-      <button type='submit' className='submit-btn'>Submit</button>
-    </form>
+
+      <form className='form-container' onSubmit={onSubmit}>
+        <div>
+        <input className='input' type='text' 
+        placeholder='Enter your name'
+        name='fullName' required/>
+        </div>
+        <div >
+        <input className='input' type='email' 
+        placeholder='Enter your email' 
+        name='email' required/>
+        </div>
+        
+        <div>
+        <textarea className='text-area' cols="63" 
+        placeholder='Enter your message'
+        name='message' required></textarea>
+        </div>
+        <button type='submit' className='submit-btn'>send message</button>
+      </form>
+    
+    </div>
     </>
   )
 }

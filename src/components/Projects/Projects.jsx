@@ -11,6 +11,7 @@ const Projects = ({delay}) => {
     <>
     <section id='projects'
     >
+    <div className='p-container'>
     <h1 className='project-heading'>Projects</h1>
     <div className='project-container'>
     <div 
@@ -193,7 +194,7 @@ const Projects = ({delay}) => {
             </date> */}
             <div class="card__body">
                 <div class="card__category"><a href="https://firocpaprsci.ccbp.tech/" target='_blank'>View Live</a></div>
-                <h2 class="card__title"><a href="#">Rock Paper Scissorscl</a></h2>
+                <h2 class="card__title"><a href="#">Rock Paper Scissors</a></h2>
                 <ul className='list'>
                     <li className='list-item'>React JS</li>
                     <li className='list-item'>HTML</li>
@@ -232,13 +233,14 @@ const Projects = ({delay}) => {
                     <li className='list-item'>HTML</li>
                     <li className='list-item'>CSS</li>
                 </ul>
-                <p class="card__description">Developed a simple password manager interface that allows users to input and store website credentials, including website name, username, and password. Features include password visibility toggle and a search functionality for filtering stored entries, ensuring ease of use and accessibility.</p>
+                <p class="card__description">Developed a simple password manager interface that allows users to input and store website credentials, including website name, username, and password. Features include password visibility toggle and a search functionality for filtering stored entries.</p>
             </div>
             {/* <footer class="card__footer">
                 <span class="icon ion-clock"></span> 10 mins ago
                 <span class="icon ion-chatbox"></span><a href="#"> 145 comments</a>
             </footer> */}
         </article>
+    </div>
     </div>
     </div>
     </section>

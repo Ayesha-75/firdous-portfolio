@@ -151,7 +151,7 @@ const Skills = () => {
   },[])
     return (
         <>
-        <section id='skills'>
+        <section id='skills' className='skill-con'>
         <h1 className='skill-heading'>Skills</h1>
             <div className='container'>
                 {skills.map(each => (

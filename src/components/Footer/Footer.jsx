@@ -1,15 +1,30 @@
 import React from 'react'
 import { FaRegCopyright } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { IoMdMail } from "react-icons/io";
 import './Footer.css'
 
 const Footer = () => {
   return (
     <div className='footer-container'>
-        <div>
-          <h1 className='name'>Firdous Ayesha</h1>
-          <p className='p-role'>Fullstack Developer</p>
-        </div>
-      <div className='copy-right'>
+      <div>
+        <a className='footer-social-icons' href='https://www.linkedin.com/in/firdousayesha/' target='_blank'>
+          <FaLinkedin size={25} />
+        </a>
+        <a className='footer-social-icons' href='https://github.com/Ayesha-75' target='_blank'>
+          <FaGithub size={25} />
+        </a>
+        <a className='footer-social-icons' href='mailto: firdousayeshashaik123@gmail.com' target='_blank'>
+          <IoMdMail size={25} />
+        </a>
+        <a className='footer-social-icons' href="https://wa.me/919966736187">
+          <IoLogoWhatsapp size={25} />
+        </a>
+      </div>
+      <p><FaRegCopyright className='cr-icon'/>2024 Firdous Ayesha. All rights reserved</p> 
+      {/* <div className='copy-right'>
           <a href='#home'>
           <img src='https://res.cloudinary.com/dadtgoi5h/image/upload/v1732271896/anime-girl-programmer-working-code-project_1282444-263471_pgtdmz.avif'
           alt='icon'
@@ -43,7 +58,7 @@ const Footer = () => {
             </div>
           
         </div>
-        <p className='copy-right-text-sm'><FaRegCopyright className='cr-icon'/>2024 Firdous Ayesha. All rights reserved</p> 
+        <p className='copy-right-text-sm'><FaRegCopyright className='cr-icon'/>2024 Firdous Ayesha. All rights reserved</p>  */}
     </div>
   )
 }

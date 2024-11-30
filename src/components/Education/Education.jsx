@@ -55,7 +55,7 @@ const educationList = [
 const Education = () => {
     
   return (
-    <section id='education'>
+    <section id='education' className='ed-container'>
         <h1 className='ed-heading'>Education</h1>
         <TimelineView timelineDetails={educationList} />
     </section>

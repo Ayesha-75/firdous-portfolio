@@ -10,10 +10,12 @@ import { FaXmark } from "react-icons/fa6";
 import './App.css'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
+import About from './components/About/About'
 
 
 const tabList =[
   {tabId:'Home', displayText:'Home',href:'home'},
+  {tabId:'About', displayText:'About',href:'about'},
   {tabId:'Skills', displayText:'Skills',href:'skills'},
   {tabId:'Projects', displayText:'Projects',href:'projects'},
   {tabId:'Education', displayText:'Education',href:'education'},
@@ -24,6 +26,7 @@ class App extends Component {
   state = {
     activeTabId: tabList[0].tabId,
     isToggle:false,
+    isSticky:false,
   }
 
   clickTabItem = id => {
@@ -32,6 +35,19 @@ class App extends Component {
       isToggle:false
     })
     
+  }
+
+  onHandleScroll =() => {
+    this.setState({ isSticky: window.scrollY > 0 });
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.onHandleScroll)
+
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onHandleScroll)
   }
 
   onClickHamburger = () => {
@@ -44,10 +60,10 @@ class App extends Component {
 
 
   render() {
-    const {activeTabId,isToggle} = this.state
+    const {activeTabId,isToggle,isSticky} = this.state
   return (
     <>
-    <header className='header-container'>
+    <header className={isSticky ? 'header-container sticky' : 'header-container'}>
       <div className='alingment'>
         <a href='#home' className='nav-head-anchor'>
           <h1 className='nav-heading'>Portfolio</h1>
@@ -56,12 +72,12 @@ class App extends Component {
         <div className='mobile-hamburger'>
         {isToggle ? (
           <a className='hamburger-menu-anchor'>
-            <FaXmark color='#fff' size={20} onClick={this.onClickHamburger} className='hamburger-icon' />
+            <FaXmark color='#000' size={20} onClick={this.onClickHamburger} className='hamburger-icon' />
           </a>
               
             ): (
             <a className='hamburger-menu-anchor' onClick={this.onClickHamburger}>
-              <GiHamburgerMenu color='#fff' size={20} className='hamburger-icon' />
+              <GiHamburgerMenu color='#000' size={20} className='hamburger-icon' />
             </a>)}
         </div>
         </div>
@@ -83,6 +99,7 @@ class App extends Component {
         
     <main className='app-container'>
       <Home />
+      <About />
       <Skills />
       <Projects />
       <Education />
