@@ -151,7 +151,7 @@ const Projects = ({delay}) => {
     >
         <article class="card">
             <header class="card__thumb">
-                <a href="#"><img src="https://res.cloudinary.com/dadtgoi5h/image/upload/v1731948474/card-match-game_eumbo7.png"/></a>
+                <a><img src="https://res.cloudinary.com/dadtgoi5h/image/upload/v1731948474/card-match-game_eumbo7.png"/></a>
             </header>
             {/* <date class="card__date">
                 <span class="card__date__day">11</span>
@@ -218,7 +218,7 @@ const Projects = ({delay}) => {
     >
         <article class="card">
             <header class="card__thumb">
-                <a href="#"><img src="https://res.cloudinary.com/dadtgoi5h/image/upload/v1731948373/password-manager_bwjehj.png"/></a>
+                <a><img src="https://res.cloudinary.com/dadtgoi5h/image/upload/v1731948373/password-manager_bwjehj.png"/></a>
             </header>
             {/* <date class="card__date">
                 <span class="card__date__day">11</span>

@@ -10,7 +10,7 @@ const skills = [
         {
           skillId: "reactjs",
           skillName: "React Js",
-          skillImageUrl: 'https://res.cloudinary.com/dadtgoi5h/image/upload/v1731476586/reactjs_logo_icon_206693_or2hva.webp',
+          skillImageUrl: 'https://res.cloudinary.com/dadtgoi5h/image/upload/v1733496154/react_b5lkx5.svg',
           alt:'reactjs'
         },
         // {
